@@ -1,0 +1,123 @@
+:root{
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    --grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+
+    --weight-400: 400;
+    --weight-500: 500;
+    --weight-700: 700;
+
+    font-family: Spartan;
+    padding: 60px 0;
+}
+
+.topHalf{
+    background-image:url('images/bg-pattern-top-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+.rounded{
+    border-radius: 10px;
+}
+
+.red{
+    color: var(--soft-pink);
+}
+
+.smallText{
+    font-size: 10px;
+}
+
+.bottomHalf{
+    background-image: url('images/bg-pattern-bottom-mobile.svg');
+}
+.usercard{
+    background-color: var(--dark-magenta);
+    margin:20px;
+    color: var(--white);
+    padding: 30px;
+}
+
+.starReport{
+    background-color: var(--light-grayish-magenta);
+    margin:30px;
+    color: var(--dark-magenta);
+    font-weight: 700;
+    text-align: center;
+}
+
+.headerOne{
+    color: var(--dark-magenta);
+    font-size:24px;
+    font-weight: 700;
+    text-align:center;
+}
+
+.light{
+    color:var(--grayish-magenta);
+    text-align:center;
+    
+}
+
+.portrait{
+    border-radius:50px;
+    max-height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.usercard p{
+    font-size: 10px;
+}
+
+
+@media only screen and (min-width: 690px){
+
+    .topHalf{
+        display:flex;
+    }
+
+    .bottomHalf{
+        display:flex;
+    }
+
+    .leftCard{
+        width:50%;
+    }
+
+    .starReport{
+        display:flex;
+        font-size: 12px;
+        padding: 12px 40px 10px 20px;
+        position: relative;
+        margin: 10px;
+    }
+
+    .starReport img{
+        max-height: 10px;
+    }
+
+    .stars{
+        padding-right: 20px;
+    }
+
+    .usercard{
+        position: relative;
+    }
+
+    .bottomHalf{
+        margin-bottom: 80px;
+        background-image: url("images/bg-pattern-bottom-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .topHalf{
+        background-repeat: no-repeat;
+        background-image: url("images/bg-pattern-top-desktop.svg");
+        background-position-x: -250%;
+        background-position-y: 2%;
+    }
+}
